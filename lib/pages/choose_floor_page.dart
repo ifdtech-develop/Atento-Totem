@@ -24,7 +24,6 @@ class _ChooseFloorPageState extends State<ChooseFloorPage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Stack(
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Center(
                 child: Padding(
