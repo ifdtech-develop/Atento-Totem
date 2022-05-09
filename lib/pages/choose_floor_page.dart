@@ -114,6 +114,14 @@ class _ChooseFloorPageState extends State<ChooseFloorPage> {
                             setState(() {
                               selectedButton = index;
                             });
+
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    floors[index].navigationPage!,
+                              ),
+                            );
                           },
                           child: Card(
                             margin: const EdgeInsets.all(10.0),
