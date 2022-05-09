@@ -65,6 +65,8 @@ flutter:
     - assets/images/grey-external-area.png
     - assets/images/white-building.svg
     - assets/images/white-external-area.svg
+    - assets/images/pink-building.svg
+    - assets/images/arrow-back.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
