@@ -3,6 +3,9 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  dart_vlc
+  flutter_native_view
+  window_manager
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)
