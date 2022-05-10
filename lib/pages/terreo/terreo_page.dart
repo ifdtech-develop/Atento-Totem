@@ -1,4 +1,3 @@
-import 'package:atento_totem/models/floors.dart';
 import 'package:atento_totem/models/terreo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
