@@ -1,17 +1,16 @@
 import 'package:dart_vlc/dart_vlc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class ShowVideoPage extends StatefulWidget {
-  const ShowVideoPage({Key? key}) : super(key: key);
+  final String video;
+
+  const ShowVideoPage({Key? key, required this.video}) : super(key: key);
 
   @override
   State<ShowVideoPage> createState() => _ShowVideoPageState();
 }
 
 class _ShowVideoPageState extends State<ShowVideoPage> {
-  Media media2 = Media.asset('assets/videos/terreo/acesso_a_cadeirante.mp4');
   Player player = Player(id: 69420);
 
   @override
@@ -19,7 +18,7 @@ class _ShowVideoPageState extends State<ShowVideoPage> {
     super.initState();
 
     player.open(
-      media2,
+      Media.asset(widget.video),
       autoStart: true,
     );
   }

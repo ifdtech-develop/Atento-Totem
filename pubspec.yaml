@@ -68,8 +68,15 @@ flutter:
     - assets/images/white-external-area.svg
     - assets/images/pink-building.svg
     - assets/images/arrow-back.svg
-
+    # terreo
     - assets/videos/terreo/acesso_a_cadeirante.mp4
+    - assets/videos/terreo/ambulatorio.mp4
+    - assets/videos/terreo/banheiro_feminino.mp4
+    - assets/videos/terreo/banheiro_masculino.mp4
+    - assets/videos/terreo/catraca.mp4
+    - assets/videos/terreo/elevadores.mp4
+    - assets/videos/terreo/recepcao.mp4
+    - assets/videos/terreo/rh.mp4
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

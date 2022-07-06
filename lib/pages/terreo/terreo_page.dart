@@ -1,4 +1,5 @@
 import 'package:atento_totem/models/terreo.dart';
+import 'package:atento_totem/pages/show_video/show_video_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -104,7 +105,7 @@ class _TerreoPageState extends State<TerreoPage> {
                       childAspectRatio: (itemWidth / itemHeight),
                       crossAxisCount: 2,
                     ),
-                    itemCount: areas.length,
+                    itemCount: terreo.length,
                     itemBuilder: (BuildContext context, int index) {
                       return Material(
                         child: InkWell(
@@ -114,6 +115,14 @@ class _TerreoPageState extends State<TerreoPage> {
                             setState(() {
                               selectedButton = index;
                             });
+
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ShowVideoPage(
+                                    video: terreo[index].videoAsset!),
+                              ),
+                            );
                           },
                           child: Card(
                             margin: const EdgeInsets.all(10.0),
@@ -155,12 +164,12 @@ class _TerreoPageState extends State<TerreoPage> {
                                       ),
                                     ),
                                     child: Icon(
-                                      areas[index].icon,
+                                      terreo[index].icon,
                                       color: Colors.white,
                                     ),
                                   ),
                                   title: Text(
-                                    areas[index].title,
+                                    terreo[index].title,
                                     style: TextStyle(
                                       color: selectedButton == index
                                           ? Colors.white
