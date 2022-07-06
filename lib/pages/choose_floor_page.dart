@@ -1,4 +1,5 @@
 import 'package:atento_totem/models/floors.dart';
+import 'package:atento_totem/pages/show_video/show_video_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -115,11 +116,17 @@ class _ChooseFloorPageState extends State<ChooseFloorPage> {
                               selectedButton = index;
                             });
 
+                            // Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(
+                            //     builder: (context) =>
+                            //         floors[index].navigationPage!,
+                            //   ),
+                            // );
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) =>
-                                    floors[index].navigationPage!,
+                                builder: (context) => ShowVideoPage(),
                               ),
                             );
                           },

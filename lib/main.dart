@@ -1,7 +1,9 @@
 import 'package:atento_totem/pages/choose_area_page.dart';
+import 'package:dart_vlc/dart_vlc.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  DartVLC.initialize();
   runApp(const MyApp());
 }
 

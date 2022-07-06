@@ -69,6 +69,8 @@ flutter:
     - assets/images/pink-building.svg
     - assets/images/arrow-back.svg
 
+    - assets/videos/terreo/acesso_a_cadeirante.mp4
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
