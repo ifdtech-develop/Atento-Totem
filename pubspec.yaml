@@ -29,8 +29,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_svg: ^1.0.3
-  dart_vlc: ^0.2.0
+  flutter_svg: ^1.1.1+1
+  dart_vlc: ^0.3.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -77,6 +77,80 @@ flutter:
     - assets/videos/terreo/elevadores.mp4
     - assets/videos/terreo/recepcao.mp4
     - assets/videos/terreo/rh.mp4
+    # area_externa
+    - assets/videos/area_externa/ponto_de_taxi.mp4
+    - assets/videos/area_externa/estacionamento.mp4
+    - assets/videos/area_externa/mercados.mp4
+    - assets/videos/area_externa/restaurante.mp4
+    - assets/videos/area_externa/pontos_de_onibus.mp4
+    - assets/videos/area_externa/estacao_de_trem.mp4
+    - assets/videos/area_externa/farmacia.mp4
+    # primeiro andar
+    - assets/videos/primeiro_andar/administracao.mp4
+    - assets/videos/primeiro_andar/banheiro_feminino.mp4
+    - assets/videos/primeiro_andar/banheiro_masculino.mp4
+    - assets/videos/primeiro_andar/banheiro_PCD.mp4
+    - assets/videos/primeiro_andar/break.mp4
+    # segundo
+    - assets/videos/segundo_andar/banheiro_feminino_1.mp4
+    - assets/videos/segundo_andar/banheiro_feminino_2.mp4
+    - assets/videos/segundo_andar/banheiro_masculino.mp4
+    - assets/videos/segundo_andar/banheiro_PCD.mp4
+    - assets/videos/segundo_andar/bebedouros.mp4
+    - assets/videos/segundo_andar/break.mp4
+    - assets/videos/segundo_andar/escada_de_emergencia.mp4
+    - assets/videos/segundo_andar/escaninhos.mp4
+    # terceiro
+    - assets/videos/terceiro_andar/banheiro_feminino_1.mp4
+    - assets/videos/terceiro_andar/banheiro_feminino_2.mp4
+    - assets/videos/terceiro_andar/banheiro_masculino.mp4
+    - assets/videos/terceiro_andar/banheiro_PCD.mp4
+    - assets/videos/terceiro_andar/bebedouros.mp4
+    - assets/videos/terceiro_andar/break.mp4
+    - assets/videos/terceiro_andar/escada_de_emergencia.mp4
+    - assets/videos/terceiro_andar/escaninhos.mp4
+    # quarto
+    - assets/videos/quarto_andar/banheiro_feminino.mp4
+    - assets/videos/quarto_andar/banheiro_masculino.mp4
+    - assets/videos/quarto_andar/bebedouros.mp4
+    - assets/videos/quarto_andar/break.mp4
+    - assets/videos/quarto_andar/escada_de_emergencia.mp4
+    - assets/videos/quarto_andar/escaninhos.mp4
+    # quinto
+    - assets/videos/quinto_andar/banheiro_feminino_1.mp4
+    - assets/videos/quinto_andar/banheiro_feminino_2.mp4
+    - assets/videos/quinto_andar/banheiro_masculino.mp4
+    - assets/videos/quinto_andar/bebedouros.mp4
+    - assets/videos/quinto_andar/escada_de_emergencia.mp4
+    - assets/videos/quinto_andar/escaninhos.mp4
+    - assets/videos/quinto_andar/operacao_libras.mp4
+    # sexto
+    - assets/videos/sexto_andar/banheiro_feminino_1.mp4
+    - assets/videos/sexto_andar/banheiro_feminino_2.mp4
+    - assets/videos/sexto_andar/banheiro_masculino.mp4
+    - assets/videos/sexto_andar/banheiro_PCD.mp4
+    - assets/videos/sexto_andar/bebedouros_1.mp4
+    - assets/videos/sexto_andar/bebedouros_2.mp4
+    - assets/videos/sexto_andar/break.mp4
+    - assets/videos/sexto_andar/escada_de_emergencia.mp4
+    - assets/videos/sexto_andar/escaninhos.mp4
+    # setimo
+    - assets/videos/setimo_andar/banheiro_feminino.mp4
+    - assets/videos/setimo_andar/banheiro_masculino.mp4
+    - assets/videos/setimo_andar/banheiro_PCD.mp4
+    - assets/videos/setimo_andar/bebedouros_1.mp4
+    - assets/videos/setimo_andar/bebedouros_2.mp4
+    - assets/videos/setimo_andar/break.mp4
+    - assets/videos/setimo_andar/escada_de_emergencia.mp4
+    - assets/videos/setimo_andar/escaninhos.mp4
+    # oitavo
+    - assets/videos/oitavo_andar/banheiro_feminino.mp4
+    - assets/videos/oitavo_andar/banheiro_masculino.mp4
+    - assets/videos/oitavo_andar/banheiro_PCD.mp4
+    - assets/videos/oitavo_andar/bebedouros.mp4
+    - assets/videos/oitavo_andar/break.mp4
+    - assets/videos/oitavo_andar/escada_de_emergencia.mp4
+    - assets/videos/oitavo_andar/escaninhos.mp4
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

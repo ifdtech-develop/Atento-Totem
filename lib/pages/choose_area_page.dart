@@ -1,3 +1,4 @@
+import 'package:atento_totem/pages/area_externa/area_externa_page.dart';
 import 'package:atento_totem/pages/choose_floor_page.dart';
 import 'package:flutter/material.dart';
 
@@ -71,6 +72,13 @@ class _ChooseAreaPageState extends State<ChooseAreaPage> {
                       setState(() {
                         selectedButton = 1;
                       });
+
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const AreaExternaPage(),
+                        ),
+                      );
                     },
                     child: CardButton(
                       selectedButton: selectedButton,
