@@ -189,6 +189,17 @@ class _TerceiroAndarPageState extends State<TerceiroAndarPage> {
                   ),
                 ),
               ),
+              ClipRect(
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  widthFactor: 0.2,
+                  child: Image.asset(
+                    'assets/images/logo.png',
+                    width: MediaQuery.of(context).size.width * 0.65,
+                    height: MediaQuery.of(context).size.height * 0.2,
+                  ),
+                ),
+              ),
             ],
           ),
           ClipRect(

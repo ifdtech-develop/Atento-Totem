@@ -11,7 +11,7 @@ class TerceiroAndar {
 final terceiroAndar = [
   TerceiroAndar(
     title: 'Banheiro Feminino 1',
-    icon: Icons.accessible,
+    icon: Icons.girl,
     videoAsset: 'assets/videos/terceiro_andar/banheiro_feminino_1.mp4',
   ),
   TerceiroAndar(
@@ -26,22 +26,22 @@ final terceiroAndar = [
   ),
   TerceiroAndar(
     title: 'Banheiro PCD',
-    icon: Icons.boy,
+    icon: Icons.accessible,
     videoAsset: 'assets/videos/terceiro_andar/banheiro_PCD.mp4',
   ),
   TerceiroAndar(
     title: 'Bebedouros',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.local_drink,
     videoAsset: 'assets/videos/terceiro_andar/bebedouros.mp4',
   ),
   TerceiroAndar(
     title: 'Break',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.free_breakfast,
     videoAsset: 'assets/videos/terceiro_andar/break.mp4',
   ),
   TerceiroAndar(
     title: 'Escada de Emergencia',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.stairs,
     videoAsset: 'assets/videos/terceiro_andar/escada_de_emergencia.mp4',
   ),
   TerceiroAndar(

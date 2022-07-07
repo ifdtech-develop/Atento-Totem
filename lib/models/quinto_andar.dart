@@ -11,7 +11,7 @@ class QuintoAndar {
 final quintoAndar = [
   QuintoAndar(
     title: 'Banheiro Feminino 1',
-    icon: Icons.accessible,
+    icon: Icons.girl,
     videoAsset: 'assets/videos/quinto_andar/banheiro_feminino_1.mp4',
   ),
   QuintoAndar(
@@ -26,12 +26,12 @@ final quintoAndar = [
   ),
   QuintoAndar(
     title: 'Bebedouros',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.local_drink,
     videoAsset: 'assets/videos/quinto_andar/bebedouros.mp4',
   ),
   QuintoAndar(
     title: 'Escada de Emergencia',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.stairs,
     videoAsset: 'assets/videos/quinto_andar/escada_de_emergencia.mp4',
   ),
   QuintoAndar(
@@ -41,7 +41,7 @@ final quintoAndar = [
   ),
   QuintoAndar(
     title: 'OPeração Libras',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.currency_pound_sharp,
     videoAsset: 'assets/videos/quinto_andar/operacao_libras.mp4',
   ),
 ];

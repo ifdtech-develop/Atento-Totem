@@ -11,7 +11,7 @@ class SextoAndar {
 final sextoAndar = [
   SextoAndar(
     title: 'Banheiro Feminino 1',
-    icon: Icons.accessible,
+    icon: Icons.girl,
     videoAsset: 'assets/videos/sexto_andar/banheiro_feminino_1.mp4',
   ),
   SextoAndar(
@@ -26,27 +26,27 @@ final sextoAndar = [
   ),
   SextoAndar(
     title: 'Banheiro PCD',
-    icon: Icons.boy,
+    icon: Icons.accessible,
     videoAsset: 'assets/videos/sexto_andar/banheiro_PCD.mp4',
   ),
   SextoAndar(
     title: 'Bebedouros 1',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.local_drink,
     videoAsset: 'assets/videos/sexto_andar/bebedouros_1.mp4',
   ),
   SextoAndar(
     title: 'Bebedouros 2',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.local_drink,
     videoAsset: 'assets/videos/sexto_andar/bebedouros_2.mp4',
   ),
   SextoAndar(
     title: 'Break',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.free_breakfast,
     videoAsset: 'assets/videos/sexto_andar/break.mp4',
   ),
   SextoAndar(
     title: 'Escada de Emergencia',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.stairs,
     videoAsset: 'assets/videos/sexto_andar/escada_de_emergencia.mp4',
   ),
   SextoAndar(

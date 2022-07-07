@@ -94,78 +94,93 @@ class _ChooseFloorPageState extends State<ChooseFloorPage> {
                   textAlign: TextAlign.center,
                 ),
               ),
-              Center(
-                child: SizedBox(
-                  width: 500,
-                  child: GridView.builder(
-                    shrinkWrap: true,
-                    // padding: EdgeInsets.all(16.0),
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      childAspectRatio: (itemWidth / itemHeight),
-                      crossAxisCount: 3,
+              Row(
+                children: [
+                  ClipRect(
+                    child: Align(
+                      alignment: Alignment.bottomLeft,
+                      widthFactor: 0.8,
+                      child: Image.asset(
+                        'assets/images/predio.png',
+                        color: Color(0xFFEDA46E),
+                        height: MediaQuery.of(context).size.height * 0.78,
+                        width: MediaQuery.of(context).size.width * 0.30,
+                      ),
                     ),
-                    itemCount: floors.length,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Material(
-                        child: InkWell(
-                          highlightColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          onTap: () {
-                            setState(() {
-                              selectedButton = index;
-                            });
+                  ),
+                  SizedBox(
+                    width: 500,
+                    child: GridView.builder(
+                      reverse: true,
+                      shrinkWrap: true,
+                      // padding: EdgeInsets.all(16.0),
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        childAspectRatio: 7.8,
+                        crossAxisCount: 1,
+                      ),
+                      itemCount: floors.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        return Material(
+                          child: InkWell(
+                            highlightColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            onTap: () {
+                              setState(() {
+                                selectedButton = index;
+                              });
 
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) =>
-                                    floors[index].navigationPage!,
-                              ),
-                            );
-                          },
-                          child: Card(
-                            margin: const EdgeInsets.all(10.0),
-                            elevation: 5,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20.0),
-                            ),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                gradient: LinearGradient(
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
-                                  colors: selectedButton == index
-                                      ? [
-                                          const Color(0xFFEDA46E),
-                                          const Color(0xFFE96F56),
-                                        ]
-                                      : [
-                                          Colors.white,
-                                          Colors.white,
-                                        ],
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      floors[index].navigationPage!,
                                 ),
+                              );
+                            },
+                            child: Card(
+                              margin: const EdgeInsets.all(10.0),
+                              elevation: 5,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20.0),
                               ),
-                              child: Center(
-                                child: Text(
-                                  floors[index].title,
-                                  style: TextStyle(
-                                    color: selectedButton == index
-                                        ? Colors.white
-                                        : const Color(0xFF808080),
-                                    fontSize: 20.0,
-                                    fontWeight: FontWeight.w600,
-                                    fontFamily: 'Quicksand',
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: selectedButton == index
+                                        ? [
+                                            const Color(0xFFEDA46E),
+                                            const Color(0xFFE96F56),
+                                          ]
+                                        : [
+                                            Colors.white,
+                                            Colors.white,
+                                          ],
+                                  ),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    floors[index].title,
+                                    style: TextStyle(
+                                      color: selectedButton == index
+                                          ? Colors.white
+                                          : const Color(0xFF808080),
+                                      fontSize: 20.0,
+                                      fontWeight: FontWeight.w600,
+                                      fontFamily: 'Quicksand',
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
                           ),
-                        ),
-                      );
-                    },
+                        );
+                      },
+                    ),
                   ),
-                ),
+                ],
               ),
             ],
           ),

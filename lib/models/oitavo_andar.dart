@@ -11,7 +11,7 @@ class OitavoAndar {
 final oitavoAndar = [
   OitavoAndar(
     title: 'Banheiro Feminino',
-    icon: Icons.accessible,
+    icon: Icons.girl,
     videoAsset: 'assets/videos/oitavo_andar/banheiro_feminino.mp4',
   ),
   OitavoAndar(
@@ -21,22 +21,22 @@ final oitavoAndar = [
   ),
   OitavoAndar(
     title: 'Banheiro PCD',
-    icon: Icons.boy,
+    icon: Icons.accessible,
     videoAsset: 'assets/videos/oitavo_andar/banheiro_PCD.mp4',
   ),
   OitavoAndar(
     title: 'Bebedouros',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.local_drink,
     videoAsset: 'assets/videos/oitavo_andar/bebedouros.mp4',
   ),
   OitavoAndar(
     title: 'Break',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.free_breakfast,
     videoAsset: 'assets/videos/oitavo_andar/break.mp4',
   ),
   OitavoAndar(
     title: 'Escada de Emergencia',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.stairs,
     videoAsset: 'assets/videos/oitavo_andar/escada_de_emergencia.mp4',
   ),
   OitavoAndar(

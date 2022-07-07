@@ -11,7 +11,7 @@ class SetimoAndar {
 final setimoAndar = [
   SetimoAndar(
     title: 'Banheiro Feminino',
-    icon: Icons.accessible,
+    icon: Icons.girl,
     videoAsset: 'assets/videos/setimo_andar/banheiro_feminino.mp4',
   ),
   SetimoAndar(
@@ -21,27 +21,27 @@ final setimoAndar = [
   ),
   SetimoAndar(
     title: 'Banheiro PCD',
-    icon: Icons.boy,
+    icon: Icons.accessible,
     videoAsset: 'assets/videos/setimo_andar/banheiro_PCD.mp4',
   ),
   SetimoAndar(
     title: 'Bebedouros 1',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.local_drink,
     videoAsset: 'assets/videos/setimo_andar/bebedouros_1.mp4',
   ),
   SetimoAndar(
     title: 'Bebedouros 2',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.local_drink,
     videoAsset: 'assets/videos/setimo_andar/bebedouros_2.mp4',
   ),
   SetimoAndar(
     title: 'Break',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.free_breakfast,
     videoAsset: 'assets/videos/setimo_andar/break.mp4',
   ),
   SetimoAndar(
     title: 'Escada de Emergencia',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.stairs,
     videoAsset: 'assets/videos/setimo_andar/escada_de_emergencia.mp4',
   ),
   SetimoAndar(

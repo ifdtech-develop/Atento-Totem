@@ -21,17 +21,17 @@ final quartoAndar = [
   ),
   QuartoAndar(
     title: 'Bebedouros',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.local_drink,
     videoAsset: 'assets/videos/quarto_andar/bebedouros.mp4',
   ),
   QuartoAndar(
     title: 'Break',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.free_breakfast,
     videoAsset: 'assets/videos/quarto_andar/break.mp4',
   ),
   QuartoAndar(
     title: 'Escada de Emergencia',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.stairs,
     videoAsset: 'assets/videos/quarto_andar/escada_de_emergencia.mp4',
   ),
   QuartoAndar(

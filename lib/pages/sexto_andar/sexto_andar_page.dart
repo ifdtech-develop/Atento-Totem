@@ -3,6 +3,8 @@ import 'package:atento_totem/pages/show_video/show_video_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../models/sexto_andar.dart';
+
 class SextoAndarPage extends StatefulWidget {
   const SextoAndarPage({Key? key}) : super(key: key);
 
@@ -21,6 +23,7 @@ class _SextoAndarPageState extends State<SextoAndarPage> {
     final double itemWidth = size.width / 2;
 
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -105,7 +108,7 @@ class _SextoAndarPageState extends State<SextoAndarPage> {
                       childAspectRatio: (itemWidth / itemHeight),
                       crossAxisCount: 2,
                     ),
-                    itemCount: terceiroAndar.length,
+                    itemCount: sextoAndar.length,
                     itemBuilder: (BuildContext context, int index) {
                       return Material(
                         child: InkWell(
@@ -164,12 +167,12 @@ class _SextoAndarPageState extends State<SextoAndarPage> {
                                       ),
                                     ),
                                     child: Icon(
-                                      terceiroAndar[index].icon,
+                                      sextoAndar[index].icon,
                                       color: Colors.white,
                                     ),
                                   ),
                                   title: Text(
-                                    terceiroAndar[index].title,
+                                    sextoAndar[index].title,
                                     style: TextStyle(
                                       color: selectedButton == index
                                           ? Colors.white
@@ -186,6 +189,17 @@ class _SextoAndarPageState extends State<SextoAndarPage> {
                         ),
                       );
                     },
+                  ),
+                ),
+              ),
+              ClipRect(
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  widthFactor: 0.2,
+                  child: Image.asset(
+                    'assets/images/logo.png',
+                    width: MediaQuery.of(context).size.width * 0.65,
+                    height: MediaQuery.of(context).size.height * 0.2,
                   ),
                 ),
               ),

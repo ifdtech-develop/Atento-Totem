@@ -3,6 +3,8 @@ import 'package:atento_totem/pages/show_video/show_video_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../models/quarto_andar.dart';
+
 class QuartoAndarPage extends StatefulWidget {
   const QuartoAndarPage({Key? key}) : super(key: key);
 
@@ -105,7 +107,7 @@ class _QuartoAndarPageState extends State<QuartoAndarPage> {
                       childAspectRatio: (itemWidth / itemHeight),
                       crossAxisCount: 2,
                     ),
-                    itemCount: terceiroAndar.length,
+                    itemCount: quartoAndar.length,
                     itemBuilder: (BuildContext context, int index) {
                       return Material(
                         child: InkWell(
@@ -164,12 +166,12 @@ class _QuartoAndarPageState extends State<QuartoAndarPage> {
                                       ),
                                     ),
                                     child: Icon(
-                                      terceiroAndar[index].icon,
+                                      quartoAndar[index].icon,
                                       color: Colors.white,
                                     ),
                                   ),
                                   title: Text(
-                                    terceiroAndar[index].title,
+                                    quartoAndar[index].title,
                                     style: TextStyle(
                                       color: selectedButton == index
                                           ? Colors.white
@@ -186,6 +188,17 @@ class _QuartoAndarPageState extends State<QuartoAndarPage> {
                         ),
                       );
                     },
+                  ),
+                ),
+              ),
+              ClipRect(
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  widthFactor: 0.2,
+                  child: Image.asset(
+                    'assets/images/logo.png',
+                    width: MediaQuery.of(context).size.width * 0.65,
+                    height: MediaQuery.of(context).size.height * 0.2,
                   ),
                 ),
               ),

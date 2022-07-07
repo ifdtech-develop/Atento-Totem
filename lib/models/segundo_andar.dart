@@ -11,7 +11,7 @@ class SegundoAndar {
 final segundoAndar = [
   SegundoAndar(
     title: 'Banheiro Feminino 1',
-    icon: Icons.accessible,
+    icon: Icons.girl,
     videoAsset: 'assets/videos/segundo_andar/banheiro_feminino_1.mp4',
   ),
   SegundoAndar(
@@ -26,22 +26,22 @@ final segundoAndar = [
   ),
   SegundoAndar(
     title: 'Banheiro PCD',
-    icon: Icons.boy,
+    icon: Icons.accessible,
     videoAsset: 'assets/videos/segundo_andar/banheiro_PCD.mp4',
   ),
   SegundoAndar(
     title: 'Bebedouros',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.local_drink,
     videoAsset: 'assets/videos/segundo_andar/bebedouros.mp4',
   ),
   SegundoAndar(
     title: 'Break',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.free_breakfast,
     videoAsset: 'assets/videos/segundo_andar/break.mp4',
   ),
   SegundoAndar(
     title: 'Escada de Emergencia',
-    icon: Icons.assignment_ind_rounded,
+    icon: Icons.stairs,
     videoAsset: 'assets/videos/segundo_andar/escada_de_emergencia.mp4',
   ),
   SegundoAndar(

@@ -91,7 +91,18 @@ class _ChooseAreaPageState extends State<ChooseAreaPage> {
                 ),
               ),
             ],
-          )
+          ),
+          ClipRect(
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              widthFactor: 0.2,
+              child: Image.asset(
+                'assets/images/logo.png',
+                width: MediaQuery.of(context).size.width * 0.65,
+                height: MediaQuery.of(context).size.height * 0.2,
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -116,47 +127,51 @@ class CardButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 5,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20.0),
-      ),
-      child: Container(
-        width: 200,
-        height: 200,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: selectedButton == value
-                ? gradientColors
-                : [
-                    Colors.white,
-                    Colors.white,
-                  ],
+    return Column(
+      children: [
+        Card(
+          elevation: 5,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
           ),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Image.asset(
-              icon,
-              color: selectedButton == value ? Colors.white : Colors.grey,
-              // semanticsLabel: 'Área $label',
-            ),
-            Text(
-              label,
-              style: TextStyle(
-                color: selectedButton == value ? Colors.white : Colors.grey,
-                fontSize: 25.0,
-                fontWeight: FontWeight.w600,
-                fontFamily: 'Quicksand',
+          child: Container(
+            width: 200,
+            height: 200,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: selectedButton == value
+                    ? gradientColors
+                    : [
+                        Colors.white,
+                        Colors.white,
+                      ],
               ),
             ),
-          ],
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset(
+                  icon,
+                  color: selectedButton == value ? Colors.white : Colors.grey,
+                  // semanticsLabel: 'Área $label',
+                ),
+                Text(
+                  label,
+                  style: TextStyle(
+                    color: selectedButton == value ? Colors.white : Colors.grey,
+                    fontSize: 25.0,
+                    fontWeight: FontWeight.w600,
+                    fontFamily: 'Quicksand',
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
-      ),
+      ],
     );
   }
 }
