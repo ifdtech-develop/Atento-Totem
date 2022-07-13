@@ -1,6 +1,7 @@
 import 'package:atento_totem/pages/area_externa/area_externa_page.dart';
 import 'package:atento_totem/pages/choose_floor_page.dart';
 import 'package:flutter/material.dart';
+import 'package:video_player/video_player.dart';
 
 class ChooseAreaPage extends StatefulWidget {
   const ChooseAreaPage({Key? key}) : super(key: key);
@@ -14,6 +15,25 @@ class _ChooseAreaPageState extends State<ChooseAreaPage> {
   final String greyExternalAreaIcon = 'assets/images/grey-external-area.png';
   final gradientColors = [const Color(0xFFEDA46E), const Color(0xFFE96F56)];
   int selectedButton = -1;
+  final asset = 'assets/bv.mp4';
+  late VideoPlayerController controller;
+
+  @override
+  void initState() {
+    super.initState();
+    controller = VideoPlayerController.asset(asset)
+      ..addListener(() {
+        setState(() {});
+      })
+      ..setLooping(true)
+      ..initialize().then((value) => controller.play());
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -90,6 +110,7 @@ class _ChooseAreaPageState extends State<ChooseAreaPage> {
                   ),
                 ),
               ),
+              VideoPlayer(controller),
             ],
           ),
           ClipRect(

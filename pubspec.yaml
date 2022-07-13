@@ -37,6 +37,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   js: ^0.6.4
+  video_player: ^2.4.5
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +75,7 @@ flutter:
     - assets/images/logo.png
     - assets/images/predio.svg
     - assets/images/predio.png
+    - assets/videos/bv.mp4
     # terreo
     - assets/videos/terreo/acesso_a_cadeirante.mp4
     - assets/videos/terreo/ambulatorio.mp4
