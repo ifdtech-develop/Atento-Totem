@@ -102,7 +102,6 @@ class _ChooseFloorPageState extends State<ChooseFloorPage> {
                       widthFactor: 0.8,
                       child: Image.asset(
                         'assets/images/predio.png',
-                        color: Color(0xFFEDA46E),
                         height: MediaQuery.of(context).size.height * 0.78,
                         width: MediaQuery.of(context).size.width * 0.30,
                       ),

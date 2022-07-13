@@ -192,7 +192,7 @@ class _PrimeiroAndarPageState extends State<PrimeiroAndarPage> {
               ClipRect(
                 child: Align(
                   alignment: Alignment.bottomCenter,
-                  widthFactor: 0.2,
+                  widthFactor: 0.45,
                   child: Image.asset(
                     'assets/images/logo.png',
                     width: MediaQuery.of(context).size.width * 0.65,

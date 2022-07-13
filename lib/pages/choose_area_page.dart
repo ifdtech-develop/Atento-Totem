@@ -95,10 +95,10 @@ class _ChooseAreaPageState extends State<ChooseAreaPage> {
           ClipRect(
             child: Align(
               alignment: Alignment.bottomCenter,
-              widthFactor: 0.2,
+              widthFactor: 0.45,
               child: Image.asset(
                 'assets/images/logo.png',
-                width: MediaQuery.of(context).size.width * 0.65,
+                width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height * 0.2,
               ),
             ),
