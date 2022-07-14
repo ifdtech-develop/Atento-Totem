@@ -1,4 +1,5 @@
 import 'package:atento_totem/pages/choose_area_page.dart';
+import 'package:atento_totem/pages/welcome/welcome_page.dart';
 import 'package:dart_vlc/dart_vlc.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ChooseAreaPage(),
+      home: const WelcomePage(),
     );
   }
 }

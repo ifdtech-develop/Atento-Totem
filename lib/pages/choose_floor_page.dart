@@ -1,4 +1,5 @@
 import 'package:atento_totem/models/floors.dart';
+import 'package:dart_vlc/dart_vlc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -11,6 +12,16 @@ class ChooseFloorPage extends StatefulWidget {
 
 class _ChooseFloorPageState extends State<ChooseFloorPage> {
   int selectedButton = -1;
+   Player player = Player(id: 69420);
+  
+
+  @override
+  void initState(){
+    super.initState();
+    player.open(Media.asset('assets/videos/andar.mp4'),
+    autoStart: true);
+   
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -179,19 +190,25 @@ class _ChooseFloorPageState extends State<ChooseFloorPage> {
                       },
                     ),
                   ),
+                  
                 ],
               ),
+              
             ],
           ),
           ClipRect(
             child: Align(
-              alignment: Alignment.bottomLeft,
-              widthFactor: 0.5,
-              child: SvgPicture.asset(
-                'assets/images/pink-building.svg',
-                height: MediaQuery.of(context).size.height * 0.38,
+            alignment: Alignment.bottomRight,
+            child: SizedBox(
+              child: Video(
+                width: 300,
+                height: 200,
+                player: player,
+                scale: 1.0,
+                showControls: true,
               ),
             ),
+          ),
           ),
         ],
       ),

@@ -1,6 +1,8 @@
 import 'package:atento_totem/pages/area_externa/area_externa_page.dart';
 import 'package:atento_totem/pages/choose_floor_page.dart';
+import 'package:dart_vlc/dart_vlc.dart';
 import 'package:flutter/material.dart';
+import 'package:video_player/video_player.dart';
 
 class ChooseAreaPage extends StatefulWidget {
   const ChooseAreaPage({Key? key}) : super(key: key);
@@ -14,6 +16,16 @@ class _ChooseAreaPageState extends State<ChooseAreaPage> {
   final String greyExternalAreaIcon = 'assets/images/grey-external-area.png';
   final gradientColors = [const Color(0xFFEDA46E), const Color(0xFFE96F56)];
   int selectedButton = -1;
+  Player player = Player(id: 69420);
+  
+
+  @override
+  void initState(){
+    super.initState();
+    player.open(Media.asset('assets/videos/area.mp4'),
+    autoStart: true);
+   
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +34,7 @@ class _ChooseAreaPageState extends State<ChooseAreaPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Padding(
-            padding: EdgeInsets.only(bottom: 35.0),
+            padding: EdgeInsets.only(bottom: 35.0, top: 125.0),
             child: Text(
               'Escolha a área que\n você deseja conhecer:',
               style: TextStyle(
@@ -103,8 +115,23 @@ class _ChooseAreaPageState extends State<ChooseAreaPage> {
               ),
             ),
           ),
+          ClipRect(
+            child: Align(
+            alignment: Alignment.bottomRight,
+            child: SizedBox(
+              child: Video(
+                width: 300,
+                height: 200,
+                player: player,
+                scale: 1.0,
+                showControls: true,
+              ),
+            ),
+          ),
+          ),
         ],
       ),
+      
     );
   }
 }
